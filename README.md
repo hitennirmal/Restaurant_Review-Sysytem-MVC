@@ -1,14 +1,38 @@
+
+Just run the following command via sbt and it will automatically download all the play dependencies.
+
+- sbt update
+- sbt compile
+- sbt run
+
+Initially, it will take 10-15 minutes to download all the resources needed.
+Once the project is started to go to the web browser and type localhost:9000
+
+Team Members:
+
+Hiten Nirmal
+Tusharika Mishra
+Niyati Shah
+Gibson Foss
+Radhika Bhavsar
+
+The presentation and other documents are included in the current folder.
+
+
+----------------------
 # ride-share
 A Play2 framework based java web application
 
-This project was done as part of course curriculum of Database Management Systems (CSCI6370) @ UGA. It was a final project of the course and was done in team of five students.
-
-Details about the project can be found in https://github.com/ankit-vaghela30/ride-share/tree/master/Documents which includes Relational Models (UML, BCNF and 3NF) of the project, project report and idea of the project.
-
-## About
-RideShare is a web application intended for commuters to share their rides with others.
+This is a Restaurant Review System where customer rate the restaurant and owner can create a restaurant.
 
 ## How to run
+
+Start mysql server and edit the conf file under ...\RestaurantReview\conf\application.conf
+
+-enter database name
+-enter mysql admin name
+-enter mysql password 
+
 To successfully run the application, system needs two things.
 
 1. SBT to run Play2 framework.
@@ -16,32 +40,29 @@ To successfully run the application, system needs two things.
 
 In the application.conf file present in conf folder, please change default.username and default.password of MySql server according to your mySQL server credentials. The default.url points to the database schema it is connected to.
 
-You can run https://github.com/ankit-vaghela30/ride-share/blob/master/SQL_Scripts/RideShare_CreateSchema.sql file to create the database schema. Even if you don't, the Model class will take care of it,
-and will create the schema itself when you run the application. If you are creating schema using the script then after executing the application, please click on
-'Mark it as Resolved' button, as the application tries to make schema from Model.
 
-To insert some default data into the database you can run https://github.com/ankit-vaghela30/ride-share/tree/master/SQL_Scripts/RideShare_Insert_Schema.sql file. Though it is not needed to have default values. The application is developed in a way that there is no dependency on default data.
+To insert some default data into the database you can run https://github.com/hitennirmal/Restaurant_Review-Sysytem-MVC/blob/master/SQL/sql%20queries.txt file. Though it is not needed to have default values. The application is developed in a way that there is no dependency on default data.
 
 
-To run the application run the following commands on CMD.
+Just run the following command via sbt and it will automatically download all the play dependencies.
 
-1. sbt
-2. update
-3. compile
-4. run
+- sbt update
+- sbt compile
+- sbt run
 
-After running the application browser will get opened with localhost:9000 as its URL. To navigate through the applicaiton, user will have to hit specific URLS.
+Initially, it will take 10-15 minutes to download all the resources needed.
+Once the project is started to go to the web browser and type localhost:9000
+
 Follow the below given flow to go through the application.
 
-1. Register as Driver. 
-2. Login as Driver.
+1. Create Owner 
+2. Login as Owner.
 (Note: Use the same credentials used in Registration)
-3. Create Vehicle.
-4. Create a Ride. 
-5. Register as Rider. 
-6. Login as Rider.
+3. Create Restaurnt.
+4. Create a Customer. 
+5. Register as Customer. 
+6. Login as Customer.
 (Note: Use the same credentials used in Registration)
-7. Search Rides.
-(Note: Use same From and To places used while creating Ride. You can use other places too, but they won't appear on the page as the Rides do not exist)
-8. Select appropriate Ride.
-9. Rate and give Feedback to the Ride.
+7. Search Restaurnt based on pincode
+8. Rate Restaurnat
+9. Review Restaurant
