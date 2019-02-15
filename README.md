@@ -1,26 +1,5 @@
 
-Just run the following command via sbt and it will automatically download all the play dependencies.
-
-- sbt update
-- sbt compile
-- sbt run
-
-Initially, it will take 10-15 minutes to download all the resources needed.
-Once the project is started to go to the web browser and type localhost:9000
-
-Team Members:
-
-Hiten Nirmal
-Tusharika Mishra
-Niyati Shah
-Gibson Foss
-Radhika Bhavsar
-
-The presentation and other documents are included in the current folder.
-
-
-----------------------
-# ride-share
+# Restaurant_Review-Sysytem-MVC
 A Play2 framework based java web application
 
 This is a Restaurant Review System where customer rate the restaurant and owner can create a restaurant.
