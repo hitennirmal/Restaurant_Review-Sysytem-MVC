@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\conf\application.conf,C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\conf\evolutions,C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\target\scala-2.11\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\conf\logback.xml,C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\conf\routes,C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\conf\evolutions\default,C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\conf\evolutions\default\1.sql,C:\Users\hiten\OneDrive\Desktop\dATABSE PROJECT 5\Ag 4\RestaurantReview\target\scala-2.11\classes\evolutions\default\1.sql)[0m

@@ -1,0 +1,48 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+GET		/owners						controllers.OwnerController.index()
+GET		/owners/create				controllers.OwnerController.create()
+GET		/owners/:id				controllers.OwnerController.show(id: Integer)
+POST	/owners/create				controllers.OwnerController.save()
+GET		/owners/delete/:id 		controllers.OwnerController.destroy(id: Integer)
+GET		/loginowner		 		controllers.OwnerController.login()
+GET		/validateowner		 		controllers.OwnerController.validate()
+
+GET		/registrations					controllers.RegistrationController.index()
+GET		/registrations/create			controllers.RegistrationController.create()
+GET		/registrations/:id				controllers.RegistrationController.show(id: Integer)
+POST	/registrations/create			controllers.RegistrationController.save()
+GET		/registrations/delete/:id 		controllers.RegistrationController.destroy(id: Integer)
+
+GET		/customers						controllers.CustomerController.index()
+GET		/customers/create				controllers.CustomerController.create()
+GET		/customers/:id					controllers.CustomerController.show(id: Integer)
+POST	/customers/create				controllers.CustomerController.save()
+GET		/customers/delete/:id 			controllers.CustomerController.destroy(id: Integer)
+GET		/logincustomer		 			controllers.CustomerController.login()
+GET		/validatecustomer	 		controllers.CustomerController.validate()
+
+GET		/searchcustomer 			    controllers.RestaurantController.search()
+GET	  /registercustomer 			    controllers.RestaurantController.register(id: Integer)
+GET	  /customersearchrestaurants 	    	controllers.RestaurantController.searchRestaurants()
+GET   /customershowrestaurants       controllers.CustomerController.showRestaurants(id: Integer)
+GET   /customerraterestaurants       controllers.RestaurantController.rate(id: Integer)
+GET   /savecustomerrating     	  controllers.RestaurantController.saveRestaurant()
+
+GET		/restaurant						controllers.RestaurantController.index()
+GET		/restaurant/create				controllers.RestaurantController.create()
+GET		/restaurant/:id					controllers.RestaurantController.show(id: Integer)
+POST	/restaurant/create				controllers.RestaurantController.save()
+GET		/restaurant/delete/:id 			controllers.RestaurantController.destroy(id: Integer)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,16 @@
+@(registrations: List[Registration])
+
+<html>
+<head>
+<title>All Registrations</title>
+</head>
+<body>
+<h1>All Registrations</h1>
+@for(registration <- registrations){
+	<a href="@routes.RegistrationController.show(registration.registrationId)">@registration.registrationId</a>
+	<p>Registration Name: @registration.registrationName</p>
+}
+
+<a href="@routes.RegistrationController.create()">Create Registration</a>
+</body>
+</html>

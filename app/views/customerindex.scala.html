@@ -1,0 +1,16 @@
+@(customers: List[Customer])
+
+<html>
+<head>
+<title>All Customers</title>
+</head>
+<body>
+<h1>All Customers</h1>
+@for(customer <- customers){
+	<a href="@routes.CustomerController.show(customer.customerId)">@customer.customerId</a>
+	<p>Customer Name: @customer.firstName</p>
+}
+
+<a href="@routes.CustomerController.create()">Create Customer</a>
+</body>
+</html>

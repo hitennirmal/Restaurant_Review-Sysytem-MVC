@@ -1,0 +1,18 @@
+@(restaurant: List[Restaurant])
+
+<html>
+<head>
+<title>All Restaurant</title>
+</head>
+<body>
+<h1>All Restaurant</h1>
+@for(restaurant <- restaurant){
+	<a href="@routes.RestaurantController.show(restaurant.restaurantId)">@restaurant.restaurantId</a>
+	<p>Restaurant City: @restaurant.city</p>
+	<p>Restaurant pincode: @restaurant.pincode</p>
+	<p>Restaurant name: @restaurant.name</p>
+}
+
+<a href="@routes.RestaurantController.create()">Create Restaurant</a>
+</body>
+</html>

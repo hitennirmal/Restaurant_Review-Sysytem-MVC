@@ -1,0 +1,15 @@
+@(registration: Registration)
+
+<html>
+<head>
+<title>@registration.registrationId</title>
+</head>
+<body>
+<h1>@registration.registrationId</h1>
+	<p>Registration Id: @registration.registrationId</p>
+	<p>Registration Name: @registration.registrationName</p>
+
+
+	<a href="@routes.RegistrationController.destroy(registration.registrationId)">Delete</a>
+</body>
+</html>

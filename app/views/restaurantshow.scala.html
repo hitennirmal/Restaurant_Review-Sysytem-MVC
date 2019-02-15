@@ -1,0 +1,15 @@
+@(restaurant: Restaurant)
+
+<html>
+<head>
+<title>@restaurant.restaurantId</title>
+</head>
+<body>
+<h1>@restaurant.restaurantId</h1>
+	<p>Restaurant City: @restaurant.city</p>
+	<p>Restaurant Pincode: @restaurant.pincode</p>
+	<p>Restaurant Name: @restaurant.name</p>
+
+	<a href="@routes.RestaurantController.destroy(restaurant.restaurantId)">Delete</a>
+</body>
+</html>
